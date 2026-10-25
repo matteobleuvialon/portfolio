@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Matteo Bleu-Vialon</title>
+    <meta
+      name="description"
+      content="Contactez Matteo Bleu-Vialon pour une alternance en développement web ou cybersécurité à Strasbourg dès le 28 décembre 2026."
+    />
+    <meta name="theme-color" content="#080a0d" />
+    <meta property="og:title" content="Contact — Matteo Bleu-Vialon" />
+    <meta
+      property="og:description"
+      content="Contactez Matteo Bleu-Vialon pour une alternance en développement web ou cybersécurité à Strasbourg dès le 28 décembre 2026."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body id="haut">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <aside class="rail" aria-label="Accès rapides">
+      <a
+        class="monogram"
+        href="index.html"
+        aria-label="Matteo Bleu-Vialon, accueil"
+        >MB<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-haspopup="dialog"
+        aria-controls="navigation-dialog"
+        hidden
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <a class="rail__contact" href="contact.html"
+        >Parlons ensemble <span aria-hidden="true">↗</span></a
+      >
+    </aside>
+    <div class="site">
+      <header class="site-header">
+        <a class="site-header__name" href="index.html"
+          >Matteo Bleu-Vialon
+          <span>Développement web &amp; cybersécurité</span></a
+        >
+        <nav class="top-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a><a href="projets.html">Projets</a
+          ><a href="parcours.html">Parcours</a
+          ><a href="progression.html">Progression</a
+          ><a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
+      <main id="contenu" tabindex="-1">
+        <nav class="breadcrumb" aria-label="Fil d’Ariane">
+          <a href="index.html">Accueil</a><span aria-hidden="true">/</span
+          ><span aria-current="page">Contact</span>
+        </nav>
+        <header class="page-heading">
+          <h1>La suite commence<br /><em>par un échange.</em></h1>
+          <p class="page-heading__intro">
+            Une alternance, un projet ou une question sur mon parcours ? Voici
+            comment me joindre.
+          </p>
+        </header>
+        <section
+          class="contact section section--tight"
+          aria-labelledby="contact-title"
+        >
+          <div class="contact__info">
+            <span class="label"
+              ><span class="status-dot" aria-hidden="true"></span>Recherche
+              d’alternance</span
+            >
+            <h2 id="contact-title">
+              À partir du<br /><time datetime="2026-12-28"
+                >28 décembre 2026.</time
+              >
+            </h2>
+            <ul class="contact__terms">
+              <li>Développement web ou cybersécurité</li>
+              <li>Contrat de 33 mois</li>
+              <li>2 semaines école / 4 à 6 semaines entreprise</li>
+              <li>Strasbourg · Permis B, véhiculé</li>
+            </ul>
+            <div class="contact__direct">
+              <a href="mailto:matteobleuvialon@gmail.com"
+                >matteobleuvialon@gmail.com ↗</a
+              ><a href="tel:+33640737069">06 40 73 70 69</a
+              ><a
+                href="https://www.linkedin.com/in/matteo-bleu-vialon-a50511246/"
+                >LinkedIn ↗</a
+              ><a href="https://github.com/matteobleuvialon">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="contact__form">
+            <h2>Préparer votre message.</h2>
+            <p id="form-help">
+              Les champs marqués * sont obligatoires. Ce formulaire prépare un
+              e-mail dans votre messagerie : vous le relisez et l’envoyez
+              vous-même. Aucune donnée n’est enregistrée par ce site.
+            </p>
+            <noscript
+              ><p>
+                Le formulaire nécessite JavaScript. Vous pouvez me contacter
+                directement à l’adresse e-mail indiquée.
+              </p></noscript
+            >
+            <form id="contact-form" aria-describedby="form-help">
+              <fieldset id="contact-fields" disabled>
+                <legend class="visually-hidden">Votre message</legend>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="name">Votre nom *</label
+                    ><input
+                      id="name"
+                      name="name"
+                      autocomplete="name"
+                      required
+                      maxlength="100"
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="email">Votre e-mail *</label
+                    ><input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required
+                      maxlength="160"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="company"
+                    >Entreprise <span>(facultatif)</span></label
+                  ><input
+                    id="company"
+                    name="company"
+                    autocomplete="organization"
+                    maxlength="120"
+                  />
+                </div>
+                <div class="field">
+                  <label for="subject">Le sujet *</label
+                  ><select id="subject" name="subject" required>
+                    <option value="">Choisir un sujet</option>
+                    <option>Proposition d’alternance</option>
+                    <option>Échange autour d’un projet</option>
+                    <option>Autre demande</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="message">Votre message *</label
+                  ><textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    minlength="10"
+                    maxlength="1500"
+                    placeholder="Présentez votre besoin et la meilleure façon de vous recontacter."
+                  ></textarea
+                  ><span class="field__hint">De 10 à 1 500 caractères.</span>
+                </div>
+                <div class="actions">
+                  <button class="button" type="submit">
+                    <span class="button__dot" aria-hidden="true">↗</span
+                    ><span class="button__label"
+                      >Préparer mon e-mail</span
+                    ></button
+                  ><button class="text-link" type="button" id="copy-message">
+                    Copier le message
+                  </button>
+                </div>
+              </fieldset>
+              <p
+                class="form-status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+              <div id="copy-fallback" hidden>
+                <label for="prepared-message"
+                  >Copiez ce texte manuellement :</label
+                ><textarea id="prepared-message" rows="7" readonly></textarea>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <a class="footer-title" href="contact.html"
+            >Une idée, une opportunité ?<br /><span>Discutons-en.</span>
+            <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="footer-links">
+          <a href="mailto:matteobleuvialon@gmail.com"
+            >matteobleuvialon@gmail.com</a
+          ><a href="https://github.com/matteobleuvialon">GitHub ↗</a
+          ><a href="https://www.linkedin.com/in/matteo-bleu-vialon-a50511246/"
+            >LinkedIn ↗</a
+          ><a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+            >Télécharger mon CV (PDF)</a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Matteo Bleu-Vialon · Strasbourg</span
+          ><a href="credits.html">Crédits &amp; confidentialité</a
+          ><a href="#haut">Retour en haut ↑</a>
+        </div>
+      </footer>
+    </div>
+    <dialog class="menu" id="navigation-dialog" aria-labelledby="menu-title">
+      <div class="menu__top">
+        <p id="menu-title">Explorer le portfolio</p>
+        <button class="menu-close" type="button" aria-label="Fermer le menu">
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <nav class="menu__links" aria-label="Menu complet">
+        <a href="index.html">Accueil</a><a href="projets.html">Projets</a
+        ><a href="parcours.html">Parcours</a
+        ><a href="progression.html">Progression</a
+        ><a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="menu__bottom">
+        <p>Développer aujourd’hui,<br />sécuriser demain.</p>
+        <a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+          >Mon CV en PDF ↗</a
+        >
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projets — Matteo Bleu-Vialon</title>
+    <meta
+      name="description"
+      content="Découvrez les projets de Matteo Bleu-Vialon : interface photovoltaïque POMPAC, Maison LUA, e-commerce Vinelem et portfolio."
+    />
+    <meta name="theme-color" content="#080a0d" />
+    <meta property="og:title" content="Projets — Matteo Bleu-Vialon" />
+    <meta
+      property="og:description"
+      content="Découvrez les projets de Matteo Bleu-Vialon : interface photovoltaïque POMPAC, Maison LUA, e-commerce Vinelem et portfolio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body id="haut">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <aside class="rail" aria-label="Accès rapides">
+      <a
+        class="monogram"
+        href="index.html"
+        aria-label="Matteo Bleu-Vialon, accueil"
+        >MB<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-haspopup="dialog"
+        aria-controls="navigation-dialog"
+        hidden
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <a class="rail__contact" href="contact.html"
+        >Parlons ensemble <span aria-hidden="true">↗</span></a
+      >
+    </aside>
+    <div class="site">
+      <header class="site-header">
+        <a class="site-header__name" href="index.html"
+          >Matteo Bleu-Vialon
+          <span>Développement web &amp; cybersécurité</span></a
+        >
+        <nav class="top-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a
+          ><a href="projets.html" aria-current="page">Projets</a
+          ><a href="parcours.html">Parcours</a
+          ><a href="progression.html">Progression</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main id="contenu" tabindex="-1">
+        <nav class="breadcrumb" aria-label="Fil d’Ariane">
+          <a href="index.html">Accueil</a><span aria-hidden="true">/</span
+          ><span aria-current="page">Projets</span>
+        </nav>
+        <header class="page-heading">
+          <h1>Des idées aux<br /><em>réalisations.</em></h1>
+          <p class="page-heading__intro">
+            Une sélection de projets scolaires et professionnels. Pour chacun :
+            le besoin, ma contribution, les outils et les pistes de progression.
+          </p>
+        </header>
+        <section class="section section--tight" aria-label="Liste des projets">
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filtrer les projets"
+            hidden
+          >
+            <button
+              type="button"
+              class="filter is-active"
+              aria-pressed="true"
+              data-filter="all"
+            >
+              Tous les projets</button
+            ><button
+              type="button"
+              class="filter"
+              aria-pressed="false"
+              data-filter="web"
+            >
+              Développement web</button
+            ><button
+              type="button"
+              class="filter"
+              aria-pressed="false"
+              data-filter="design"
+            >
+              Design</button
+            ><button
+              type="button"
+              class="filter"
+              aria-pressed="false"
+              data-filter="cms"
+            >
+              E-commerce
+            </button>
+          </div>
+          <p class="filter-status" role="status" aria-live="polite"></p>
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <a
+                class="project-card__image"
+                href="projet-pompac.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--energy">
+                  <img
+                    src="assets/images/energy.svg"
+                    alt="Schéma : SolarEdge et Météo-France alimentent une interface TV sur Raspberry Pi."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>Développement web</span><span>2026</span>
+              </div>
+              <h2>
+                <a href="projet-pompac.html"
+                  >Tableau de bord photovoltaïque<span aria-hidden="true"
+                    >↗</span
+                  ></a
+                >
+              </h2>
+              <p>
+                Une interface TV qui rassemble production photovoltaïque,
+                autoconsommation et météo.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML / CSS / JS</li>
+                <li>PHP</li>
+                <li>API REST</li>
+                <li>Raspberry Pi</li>
+              </ul>
+            </article>
+            <article class="project-card" data-category="design">
+              <a
+                class="project-card__image"
+                href="projet-maison-lua.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--lua">
+                  <img
+                    src="assets/images/lua.svg"
+                    alt="Schéma : maquette Figma, développement du site puis animations GSAP."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>Design & développement</span><span>2025</span>
+              </div>
+              <h2>
+                <a href="projet-maison-lua.html"
+                  >Maison LUA<span aria-hidden="true">↗</span></a
+                >
+              </h2>
+              <p>
+                Un site vitrine animé pour une marque de maroquinerie, de la
+                maquette à la mise en ligne.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Figma</li>
+                <li>HTML / CSS / JS</li>
+                <li>GSAP</li>
+              </ul>
+            </article>
+            <article class="project-card" data-category="cms">
+              <a
+                class="project-card__image"
+                href="projet-vinelem.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--flow">
+                  <img
+                    src="assets/images/flow.svg"
+                    alt="Schéma : boutique WooCommerce, contenus numériques et échanges marketing automatisés avec n8n."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>E-commerce & automatisation</span
+                ><span>Projet professionnel</span>
+              </div>
+              <h2>
+                <a href="projet-vinelem.html"
+                  >Vinelem<span aria-hidden="true">↗</span></a
+                >
+              </h2>
+              <p>
+                Une boutique en ligne et l’automatisation des échanges liés aux
+                collaborations marketing.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>WordPress</li>
+                <li>WooCommerce</li>
+                <li>n8n</li>
+              </ul>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                class="project-card__image"
+                href="projet-portfolio.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--folio">
+                  <img
+                    src="assets/images/folio.svg"
+                    alt="Schéma des cinq rubriques principales du portfolio."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>Projet scolaire</span><span>2026</span>
+              </div>
+              <h2>
+                <a href="projet-portfolio.html"
+                  >Ce portfolio<span aria-hidden="true">↗</span></a
+                >
+              </h2>
+              <p>
+                Un site multipage pour relier mes réalisations, mes compétences
+                et ma progression.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML sémantique</li>
+                <li>CSS responsive</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <aside class="note">
+          <h2>Pourquoi ces projets ?</h2>
+          <p>
+            Ils montrent des contextes complémentaires : un outil utilisé en
+            entreprise, une réalisation scolaire, une activité familiale et un
+            support de progression. Je les ai sélectionnés pour relier mes
+            compétences à des réalisations concrètes.
+          </p>
+        </aside>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <a class="footer-title" href="contact.html"
+            >Une idée, une opportunité ?<br /><span>Discutons-en.</span>
+            <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="footer-links">
+          <a href="mailto:matteobleuvialon@gmail.com"
+            >matteobleuvialon@gmail.com</a
+          ><a href="https://github.com/matteobleuvialon">GitHub ↗</a
+          ><a href="https://www.linkedin.com/in/matteo-bleu-vialon-a50511246/"
+            >LinkedIn ↗</a
+          ><a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+            >Télécharger mon CV (PDF)</a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Matteo Bleu-Vialon · Strasbourg</span
+          ><a href="credits.html">Crédits &amp; confidentialité</a
+          ><a href="#haut">Retour en haut ↑</a>
+        </div>
+      </footer>
+    </div>
+    <dialog class="menu" id="navigation-dialog" aria-labelledby="menu-title">
+      <div class="menu__top">
+        <p id="menu-title">Explorer le portfolio</p>
+        <button class="menu-close" type="button" aria-label="Fermer le menu">
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <nav class="menu__links" aria-label="Menu complet">
+        <a href="index.html">Accueil</a
+        ><a href="projets.html" aria-current="page">Projets</a
+        ><a href="parcours.html">Parcours</a
+        ><a href="progression.html">Progression</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+      <div class="menu__bottom">
+        <p>Développer aujourd’hui,<br />sécuriser demain.</p>
+        <a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+          >Mon CV en PDF ↗</a
+        >
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Portfolio — Développement web & cybersécurité — Matteo Bleu-Vialon
+    </title>
+    <meta
+      name="description"
+      content="Portfolio de Matteo Bleu-Vialon, étudiant à Epitech Strasbourg. Projets web, parcours et recherche d’alternance dès le 28 décembre 2026."
+    />
+    <meta name="theme-color" content="#080a0d" />
+    <meta
+      property="og:title"
+      content="Portfolio — Développement web & cybersécurité — Matteo Bleu-Vialon"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de Matteo Bleu-Vialon, étudiant à Epitech Strasbourg. Projets web, parcours et recherche d’alternance dès le 28 décembre 2026."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body id="haut">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <aside class="rail" aria-label="Accès rapides">
+      <a
+        class="monogram"
+        href="index.html"
+        aria-label="Matteo Bleu-Vialon, accueil"
+        >MB<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-haspopup="dialog"
+        aria-controls="navigation-dialog"
+        hidden
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <a class="rail__contact" href="contact.html"
+        >Parlons ensemble <span aria-hidden="true">↗</span></a
+      >
+    </aside>
+    <div class="site">
+      <header class="site-header">
+        <a class="site-header__name" href="index.html"
+          >Matteo Bleu-Vialon
+          <span>Développement web &amp; cybersécurité</span></a
+        >
+        <nav class="top-nav" aria-label="Navigation principale">
+          <a href="index.html" aria-current="page">Accueil</a
+          ><a href="projets.html">Projets</a><a href="parcours.html">Parcours</a
+          ><a href="progression.html">Progression</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main id="contenu" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero__top">
+            <span>Étudiant à Epitech Strasbourg</span
+            ><span>Portfolio · 2026</span>
+          </div>
+          <div class="hero__grid">
+            <div class="hero__identity">
+              <h1 id="hero-title"><span>Matteo</span>Bleu-Vialon</h1>
+              <p class="hero__specialty">
+                Développement web<br />&amp; cybersécurité
+              </p>
+              <div class="hero__availability">
+                <span class="label"
+                  ><span class="status-dot" aria-hidden="true"></span>Recherche
+                  d’alternance</span
+                >
+                <p>
+                  Dès le <time datetime="2026-12-28">28 décembre 2026</time>
+                </p>
+              </div>
+            </div>
+            <figure class="hero__portrait">
+              <img
+                src="assets/images/matteo-bleu-vialon.jpg"
+                alt="Portrait de Matteo Bleu-Vialon"
+                width="995"
+                height="796"
+                fetchpriority="high"
+              />
+              <figcaption>Construire. Comprendre. Progresser.</figcaption>
+            </figure>
+          </div>
+          <div class="hero__intro">
+            <h2>Développer aujourd’hui,<br />sécuriser demain.</h2>
+            <div>
+              <p>
+                Du webdesign aux interfaces connectées, je construis des projets
+                pour des besoins concrets. Aujourd’hui en Pré-MSc à Epitech, je
+                développe mes bases en systèmes, réseaux et cybersécurité.
+              </p>
+              <div class="actions">
+                <a class="button" href="projets.html"
+                  ><span class="button__dot" aria-hidden="true">↗</span
+                  ><span class="button__label">Découvrir mes projets</span></a
+                ><a class="text-link" href="contact.html"
+                  >Parlons alternance ↗</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero__bottom">
+            <ul class="inline-list">
+              <li>Contrat de 33 mois</li>
+              <li>2 sem. école / 4 à 6 sem. entreprise</li>
+              <li>Strasbourg</li>
+            </ul>
+            <a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+              >Mon CV (PDF) ↓</a
+            >
+          </div>
+        </section>
+        <section class="section" aria-labelledby="selected-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Du besoin à la réalisation</p>
+              <h2 id="selected-title">Le travail en pratique.</h2>
+            </div>
+            <a class="text-link" href="projets.html">Tous les projets ↗</a>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <a
+                class="project-card__image"
+                href="projet-pompac.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--energy">
+                  <img
+                    src="assets/images/energy.svg"
+                    alt="Schéma : SolarEdge et Météo-France alimentent une interface TV sur Raspberry Pi."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>Développement web</span><span>2026</span>
+              </div>
+              <h3>
+                <a href="projet-pompac.html"
+                  >Tableau de bord photovoltaïque<span aria-hidden="true"
+                    >↗</span
+                  ></a
+                >
+              </h3>
+              <p>
+                Une interface TV qui rassemble production photovoltaïque,
+                autoconsommation et météo.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML / CSS / JS</li>
+                <li>PHP</li>
+                <li>API REST</li>
+                <li>Raspberry Pi</li>
+              </ul>
+            </article>
+            <article class="project-card" data-category="design">
+              <a
+                class="project-card__image"
+                href="projet-maison-lua.html"
+                tabindex="-1"
+                aria-hidden="true"
+                ><figure class="project-visual project-visual--lua">
+                  <img
+                    src="assets/images/lua.svg"
+                    alt="Schéma : maquette Figma, développement du site puis animations GSAP."
+                    width="1000"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Schéma explicatif · pas une capture du projet
+                  </figcaption>
+                </figure></a
+              >
+              <div class="project-card__meta">
+                <span>Design & développement</span><span>2025</span>
+              </div>
+              <h3>
+                <a href="projet-maison-lua.html"
+                  >Maison LUA<span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>
+                Un site vitrine animé pour une marque de maroquinerie, de la
+                maquette à la mise en ligne.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Figma</li>
+                <li>HTML / CSS / JS</li>
+                <li>GSAP</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="statement">
+          <p class="eyebrow">Mon fil conducteur</p>
+          <h2>Le sens du design.<br />Le goût de la technique.</h2>
+          <div>
+            <p>
+              Le webdesign m’a appris à penser une interface. Mes projets
+              professionnels m’ont confronté à sa réalisation et à son usage. À
+              Epitech, je veux approfondir ce qui se passe derrière l’écran.
+            </p>
+            <a class="text-link" href="parcours.html"
+              >Explorer mon parcours ↗</a
+            >
+          </div>
+        </section>
+        <section class="section learning-teaser">
+          <div>
+            <p class="eyebrow">Un portfolio qui évolue</p>
+            <h2>Apprendre, puis<br />le mettre en pratique.</h2>
+          </div>
+          <div>
+            <p>
+              Python, Git, Linux et les fondamentaux réseau font partie de mon
+              apprentissage actuel. Je documente les acquis, leurs preuves et ce
+              qu’il me reste à approfondir.
+            </p>
+            <a class="button" href="progression.html"
+              ><span class="button__dot" aria-hidden="true">↗</span
+              ><span class="button__label">Suivre ma progression</span></a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <a class="footer-title" href="contact.html"
+            >Une idée, une opportunité ?<br /><span>Discutons-en.</span>
+            <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="footer-links">
+          <a href="mailto:matteobleuvialon@gmail.com"
+            >matteobleuvialon@gmail.com</a
+          ><a href="https://github.com/matteobleuvialon">GitHub ↗</a
+          ><a href="https://www.linkedin.com/in/matteo-bleu-vialon-a50511246/"
+            >LinkedIn ↗</a
+          ><a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+            >Télécharger mon CV (PDF)</a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Matteo Bleu-Vialon · Strasbourg</span
+          ><a href="credits.html">Crédits &amp; confidentialité</a
+          ><a href="#haut">Retour en haut ↑</a>
+        </div>
+      </footer>
+    </div>
+    <dialog class="menu" id="navigation-dialog" aria-labelledby="menu-title">
+      <div class="menu__top">
+        <p id="menu-title">Explorer le portfolio</p>
+        <button class="menu-close" type="button" aria-label="Fermer le menu">
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <nav class="menu__links" aria-label="Menu complet">
+        <a href="index.html" aria-current="page">Accueil</a
+        ><a href="projets.html">Projets</a><a href="parcours.html">Parcours</a
+        ><a href="progression.html">Progression</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+      <div class="menu__bottom">
+        <p>Développer aujourd’hui,<br />sécuriser demain.</p>
+        <a href="assets/documents/cv-matteo-bleu-vialon.pdf" download
+          >Mon CV en PDF ↗</a
+        >
+      </div>
+    </dialog>
+  </body>
+</html>

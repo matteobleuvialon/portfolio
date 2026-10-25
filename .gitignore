@@ -1,0 +1,12 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# Variables d'environnement
+.env
+.env.*
+
+# Documents de consignes Epitech
+/portfolio-bootstrap.pdf
+/portfolio-project.pdf
