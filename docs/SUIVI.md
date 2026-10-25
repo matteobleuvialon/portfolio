@@ -1,29 +1,116 @@
-# Suivi du sujet et de la progression
+# Suivi du portfolio
 
-## Couverture du sujet
+Ce document retrace les principales étapes de
+développement et de publication de mon portfolio,
+réalisé dans le cadre de ma formation à Epitech.
 
-| Attendu | Réalisation |
-| --- | --- |
-| Plusieurs pages, navigation cohérente | Cinq pages principales, quatre fiches projets, page crédits ; navigation commune et fil d’Ariane |
-| Accroche, photo professionnelle | Accueil ; photo extraite du CV fourni |
-| Coordonnées, formulaire | Contact ; préparation d’e-mail et copie, sans backend |
-| Travaux scolaires et professionnels | Maison LUA, portfolio, POMPAC, Vinelem |
-| Contexte, objectif, compétences, liens utiles | Fiches dédiées ; liens des projets reportés à la demande de Matteo |
-| Apprentissages et progression | Page Progression, liens compétences/projets et objectifs distincts des acquis |
-| Expériences hors école | Parcours : POMPAC, Gecko Studio, Vinelem |
-| CV téléchargeable | PDF local, liens dans chaque pied de page |
-| Ressources créditées | Page Crédits et README ; droits de la photo à confirmer |
-| Responsive et accessibilité | Grilles adaptatives, focus visible, textes alternatifs, titres, clavier, mouvement réduit |
-| SEO | Titres/descriptions propres, langue, contenu HTML, liens et structure sémantique |
-| Répertoire documenté | README, dossiers assets et docs |
-| Hébergement en ligne automatisé | Étape différée par Matteo ; processus documenté dans README |
+Il permet de suivre les fonctionnalités du site,
+les décisions techniques et les améliorations
+prévues.
 
-Le fichier portfolio-bootstrap.pdf explique l’hébergement : il n’impose pas le framework Bootstrap. Le préprocesseur/postprocesseur et le micro-framework sont recommandés dans le sujet, pas obligatoires. Cette version privilégie HTML/CSS/JS natifs à la demande de Matteo.
+## Fonctionnalités du site
 
-## Journal à enrichir après chaque étape
+| Fonctionnalité | Réalisation |
+|---|---|
+| Navigation | Pages HTML reliées par un menu commun et un fil d'Ariane |
+| Présentation | Page d'accueil avec mon profil, ma photographie et mes projets |
+| Réalisations | Quatre fiches détaillant mes projets scolaires et professionnels |
+| Parcours | Présentation de mes formations et expériences |
+| Compétences | Page dédiée aux acquis, apprentissages et objectifs |
+| Contact | Formulaire de préparation d'e-mail sans backend |
+| CV | Document PDF consultable et téléchargeable |
+| Responsive | Mise en page adaptée aux différentes tailles d'écran |
+| Accessibilité | HTML sémantique, navigation au clavier et prise en compte des préférences de mouvement |
+| Référencement | Titres, descriptions et structure HTML adaptés |
+| Documentation | README et documents techniques |
+| Publication | Hébergement du site avec GitHub Pages |
 
-| Date | Travail effectué | Difficulté rencontrée | Ce que je peux expliquer seul | Preuve |
-| --- | --- | --- | --- | --- |
-| 25/10/2026 | Première structure du portfolio produite avec assistance | À renseigner par Matteo | À vérifier par la pratique | Fichiers et fiche « Ce portfolio » |
+## Choix techniques
 
-Ne pas remplir rétroactivement des progrès fictifs. Ajouter de vrais exemples : commande comprise, erreur corrigée, capture autorisée, lien de commit ou exercice terminé. Mettre à jour la date dans progression.html à chaque nouveau bilan.
+Le portfolio utilise HTML, CSS et JavaScript natifs.
+
+Le choix d'une architecture statique permet de
+conserver un projet simple à comprendre et à
+maintenir, sans dépendance externe ni étape
+de compilation.
+
+Les pages partagent une feuille CSS et un fichier
+JavaScript communs.
+
+Les contenus principaux restent accessibles
+sans JavaScript, tandis que les interactions
+améliorent l'expérience de navigation.
+
+## Mise en ligne
+
+Le portfolio est hébergé sur GitHub Pages.
+
+Dépôt :
+https://github.com/matteobleuvialon/portfolio
+
+Site :
+https://matteobleuvialon.github.io/portfolio/
+
+Le projet est publié depuis la branche `main`
+et le dossier racine du repository.
+
+Les modifications envoyées sur cette branche
+déclenchent automatiquement un nouveau déploiement.
+
+## Journal de progression
+
+### 25 octobre 2026 — Première version
+
+Mise en place de la structure multipage et
+organisation des contenus du portfolio.
+
+Les principales rubriques présentent mon parcours,
+mes projets, mes compétences et mes coordonnées.
+
+Cette première version constitue une base
+qui évoluera avec ma formation.
+
+### 25 octobre 2026 — Git et GitHub
+
+Initialisation du repository Git en local.
+
+Préparation des fichiers avec `git add`, création
+du premier commit et configuration du dépôt distant.
+
+Envoi des fichiers vers GitHub avec `git push`.
+
+Cette étape m'a permis de découvrir le fonctionnement
+du versionnement et la distinction entre dépôt local
+et dépôt distant.
+
+### 25 octobre 2026 — GitHub Pages
+
+Configuration de GitHub Pages depuis la branche
+`main` et le dossier `/ (root)`.
+
+Première publication du portfolio en ligne.
+
+Les prochaines modifications seront publiées
+à partir de nouveaux commits Git.
+
+## Améliorations prévues
+
+- Ajouter progressivement de nouveaux projets.
+- Intégrer des captures réelles des réalisations.
+- Enrichir les descriptions avec davantage
+  de retours d'expérience.
+- Approfondir la compréhension du JavaScript.
+- Tester l'accessibilité et le responsive
+  sur davantage d'appareils.
+- Actualiser les compétences et le CV
+  au fil de mon parcours.
+
+## Méthode de suivi
+
+Pour chaque évolution importante, je souhaite
+conserver une trace du travail réalisé, des
+difficultés rencontrées et des solutions
+apportées.
+
+L'historique des commits Git permet également
+de retrouver les différentes étapes du projet.

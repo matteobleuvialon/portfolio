@@ -28,6 +28,24 @@ Chaque bouton possède `data-filter` et chaque carte `data-category`. Au clic, l
 
 Le point est un cercle de 28 px réduit avec `transform: scale(.2)`. Sur hover ou focus-visible, il reprend sa taille et révèle la flèche. `transition` interpole entre les deux états. La préférence de réduction des mouvements désactive cette transition.
 
-## Ce qui demande encore ton travail
+## Pistes de progression
 
-L’aide à la création est indiquée dans la fiche du portfolio. Pour te l’approprier : change un filtre, explique pourquoi les liens fonctionnent sans JavaScript, puis modifie une grille responsive et vérifie le résultat. Ne présente pas une notion comme maîtrisée avant de pouvoir la reproduire et l’expliquer.
+Ce document me sert de référence pour comprendre
+l'organisation du portfolio et le fonctionnement
+de ses principales fonctionnalités.
+
+Pour poursuivre mon apprentissage, je souhaite
+notamment :
+
+- Modifier les filtres de projets pour mieux
+  comprendre la manipulation du DOM.
+- Approfondir les événements JavaScript et
+  le fonctionnement du menu mobile.
+- Expérimenter différentes mises en page avec
+  CSS Grid et Flexbox.
+- Tester le comportement du site sur différents
+  navigateurs et appareils.
+- Continuer à améliorer l'accessibilité.
+
+Chaque évolution sera testée localement avant
+d'être enregistrée avec Git et publiée sur GitHub.
