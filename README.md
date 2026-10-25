@@ -1,83 +1,262 @@
 # Portfolio — Matteo Bleu-Vialon
 
-Portfolio statique multipage en HTML, CSS et JavaScript. Aucun framework, gestionnaire de paquets, backend ou build nécessaire. Les fichiers peuvent être ouverts directement dans un navigateur.
+Portfolio personnel développé en HTML, CSS et JavaScript dans le cadre de mon parcours à Epitech.
 
-## Consulter le site
+Ce site présente mon parcours, mes expériences professionnelles, mes projets et l'évolution de mes compétences en développement informatique. Il rassemble aussi bien mes réalisations passées dans le web et le design que mes apprentissages actuels en programmation.
 
-Ouvrir `index.html` dans le navigateur, ou lancer depuis ce dossier :
+L'objectif était de construire un site simple à maintenir, responsive et accessible, sans dépendre d'un framework ou d'une infrastructure complexe.
 
-```sh
+**[Consulter le portfolio](https://matteobleuvialon.github.io/portfolio/)**
+
+## Technologies utilisées
+
+Le portfolio repose sur trois technologies :
+
+- **HTML5** : structure des pages, contenu et navigation.
+- **CSS3** : identité visuelle, mise en page, responsive design et animations.
+- **JavaScript (ES6+)** : navigation mobile, filtres de projets et interactions du formulaire de contact.
+
+Le site fonctionne sans framework, sans bibliothèque externe et sans gestionnaire de paquets. Aucun serveur applicatif ni aucune base de données ne sont nécessaires.
+
+L'hébergement est assuré gratuitement par **GitHub Pages**, avec une publication automatique à chaque mise à jour de la branche `main`.
+
+## Contenu du portfolio
+
+Le site s'organise autour de plusieurs sections complémentaires.
+
+**Accueil**
+
+Présentation de mon profil, de mon parcours actuel et de mes principaux projets. Cette page permet d'accéder rapidement aux différentes parties du portfolio.
+
+**Projets**
+
+Présentation détaillée de plusieurs réalisations, notamment POMPAC, Vinelem, mon portfolio et un projet développé avec Lua.
+
+Chaque fiche présente le contexte du projet, les technologies utilisées, mon implication et les enseignements tirés de sa réalisation. Des filtres permettent de parcourir plus facilement les projets.
+
+**Parcours**
+
+Retour sur mes expériences professionnelles, mes formations et les compétences acquises au fil de mon parcours.
+
+**Progression**
+
+Suivi de mon apprentissage technique, des notions abordées et des compétences que je cherche à développer. Cette section évoluera au fur et à mesure de mes formations et de mes projets.
+
+**Contact**
+
+Mise à disposition de mes coordonnées et d'un formulaire permettant de préparer un message depuis le logiciel de messagerie du visiteur.
+
+## Organisation des fichiers
+
+Le projet est organisé de manière à séparer le contenu, les styles, les scripts et les ressources.
+
+```text
+portfolio/
+├── index.html
+├── projets.html
+├── parcours.html
+├── progression.html
+├── contact.html
+├── credits.html
+│
+├── projet-maison-lua.html
+├── projet-pompac.html
+├── projet-portfolio.html
+├── projet-vinelem.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   ├── images/
+│   └── documents/
+│
+├── docs/
+│   ├── COMPRENDRE.md
+│   ├── SUIVI.md
+│   └── VERIFICATIONS.md
+│
+├── .gitignore
+├── .nojekyll
+└── README.md
+```
+
+Les fichiers HTML correspondent aux différentes pages du site. Les ressources partagées sont regroupées dans `assets/` afin de faciliter leur réutilisation.
+
+Le dossier `docs/` contient des notes sur le fonctionnement du code, le suivi du projet et les vérifications techniques.
+
+## Installation et utilisation en local
+
+Le portfolio étant entièrement statique, aucune installation de dépendances n'est nécessaire.
+
+### 1. Récupérer le projet
+
+```bash
+git clone https://github.com/matteobleuvialon/portfolio.git
+```
+
+### 2. Accéder au dossier
+
+```bash
+cd portfolio
+```
+
+### 3. Lancer le site
+
+Il est possible d'ouvrir directement `index.html` dans un navigateur.
+
+Pour travailler avec un serveur HTTP local, utiliser Python :
+
+```bash
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Puis ouvrir `http://localhost:8080`. Arrêter le serveur avec Ctrl+C. Le serveur est un outil local de consultation, pas le backend du site.
+Le site est alors accessible à l'adresse :
 
-## Structure
+**http://localhost:8080**
 
-- `index.html` : présentation, photo, alternance et sélection de projets.
-- `projets.html` : liste et filtres des projets.
-- `projet-*.html` : quatre études de cas (contexte, contribution, outils, réflexion, suite).
-- `parcours.html` : expériences professionnelles, formations, qualités, langues et intérêts.
-- `progression.html` : compétences reliées à des projets, apprentissages et objectifs.
-- `contact.html` : coordonnées et formulaire de préparation d’e-mail.
-- `credits.html` : ressources et confidentialité.
-- `assets/css/style.css` : styles communs, numérotés et commentés par responsabilité.
-- `assets/js/main.js` : menu, filtres et contact ; aucune dépendance.
-- `assets/images/` : photo extraite du CV, favicon et schémas SVG originaux.
-- `assets/documents/` : CV PDF téléchargeable.
-- `docs/` : explication du code, suivi des exigences et journal de progression à compléter.
-- `portfolio-project.pdf`, `portfolio-bootstrap.pdf` : sujets fournis, conservés sans modification.
+Pour arrêter le serveur, utiliser `Ctrl + C` dans le terminal.
 
-## Choix de contenu et de technique
+Ce serveur sert uniquement à consulter et tester le site localement. Il ne constitue pas un backend.
 
-Le visiteur découvre le profil, consulte des projets, puis approfondit le parcours et la progression. Les expériences extra-scolaires sont les expériences réelles de POMPAC, Gecko Studio et Vinelem. Aucune association, certification ou expérience de sécurité professionnelle n’a été inventée.
+## Choix techniques
 
-HTML porte le contenu et la navigation ; CSS assure l’apparence et le responsive ; JavaScript enrichit le comportement. Les noms CSS utilisent des blocs et éléments explicites (`hero`, `hero__portrait`), selon une convention inspirée de BEM. Le sujet recommande des outils CSS sans les imposer. Le choix de CSS natif respecte la demande et réduit les notions nécessaires à l’explication.
+### Une architecture volontairement simple
 
-Les contenus sont présents dans le HTML : ils restent lisibles sans JavaScript et sont accessibles aux moteurs de recherche. Les détails de compétences utilisent `<details>` et `<summary>`. Le menu utilise `<dialog>` pour bénéficier du comportement modal natif. Les filtres utilisent de vrais boutons. Les animations respectent `prefers-reduced-motion`.
+J'ai choisi de développer ce portfolio sans framework afin de travailler directement avec les fondamentaux du développement web.
 
-## Formulaire : fonctionnement réel
+Cette approche permet de comprendre précisément le rôle de chaque technologie et de garder la maîtrise de la structure des pages, des styles et des interactions.
 
-Le formulaire valide les champs dans le navigateur. « Préparer mon e-mail » ouvre un lien `mailto:` contenant un objet et un message encodés ; le visiteur doit envoyer l’e-mail lui-même. Cela nécessite un logiciel de messagerie configuré. Aucun accusé d’envoi n’est affiché.
+Le contenu principal est intégré directement dans le HTML. Il reste ainsi disponible indépendamment de l'exécution de JavaScript.
 
-« Copier le message » utilise le presse-papiers si autorisé. Sinon, un champ sélectionnable permet une copie manuelle. Aucune donnée n’est stockée, et aucune soumission automatique à un service tiers n’a lieu. Sans JavaScript, les coordonnées et liens directs restent disponibles.
+### Organisation du CSS
 
-## Modifier le site
+Les styles sont centralisés dans `assets/css/style.css` et regroupés par composants et responsabilités.
 
-Modifier le texte dans le fichier HTML concerné. Pour ajouter un projet, dupliquer une fiche `projet-*.html`, adapter son titre et sa description dans `<head>`, puis ajouter la carte correspondante dans `projets.html`. Les liens sont relatifs pour fonctionner sous une URL GitHub Pages de type `/nom-du-depot/`.
+Le nommage des classes reprend certains principes de la méthodologie BEM, avec des noms explicites comme `hero` ou `hero__portrait`.
 
-Le menu et le pied de page sont répétés volontairement dans chaque page pour rester sans build et sans injection JavaScript. Toute modification de leurs liens doit être reportée dans toutes les pages. `aria-current="page"` identifie la page active ; les fiches projets utilisent la classe `is-section` sur le lien Projets.
+Ce fonctionnement facilite la lecture du code et limite les conflits entre les différentes sections.
 
-Pour remplacer un schéma par une vraie capture, ajouter une image optimisée dans `assets/images`, adapter `src`, `width`, `height`, le texte `alt` et la légende. Ne publier aucune donnée interne sans autorisation. Les schémas présents sont explicitement identifiés comme tels.
+### JavaScript sans dépendances
 
-## À compléter avec Matteo avant publication
+Le fichier `assets/js/main.js` regroupe les fonctionnalités interactives du site :
 
-- Relire et personnaliser les réflexions : les formulations ont été préparées à partir du CV, pas d’un entretien détaillé sur chaque difficulté rencontrée.
-- Ajouter ultérieurement les vrais liens et captures des projets (report demandé par Matteo).
-- Confirmer les droits de publication de la photo fournie : le CV ne mentionne pas le photographe.
-- Vérifier la pertinence actuelle de la date d’alternance, des coordonnées et du CV.
-- Ajouter l’URL du dépôt et l’URL définitive aux métadonnées lorsque le dépôt existera. Les URL canoniques et de partage ne sont pas inventées à l’avance.
-- Faire un passage Lighthouse, une validation HTML et les vérifications manuelles ci-dessous.
+- Ouverture et fermeture du menu mobile.
+- Filtrage des projets.
+- Validation du formulaire de contact.
+- Préparation des e-mails.
+- Copie du message dans le presse-papiers.
 
-## Publication automatisée prévue (non effectuée)
+Les fonctionnalités s'appuient sur les API natives du navigateur.
 
-Le sujet prévoit une publication GitHub Pages. Aucun dépôt n’a été créé et aucun fichier n’a été publié pour cette tâche. La configuration sera faite avec Matteo lors de l’étape déploiement.
+### Navigation et accessibilité
 
-Principe : placer ce dossier à la racine d’un dépôt GitHub, puis activer GitHub Pages avec « Deploy from a branch », branche `main`, dossier `/ (root)`. Après cette configuration initiale, chaque push sur `main` republiera les fichiers automatiquement. Le site n’a pas d’étape de compilation ; aucun workflow de build personnalisé n’est nécessaire. Vérifier les intitulés et options actuels dans GitHub à ce moment-là.
+Une attention particulière a été portée à la structure HTML et à l'utilisation d'éléments adaptés à chaque interaction.
 
-Ne pas publier de fichiers temporaires, identifiants ou données de formulaire. Le `.gitignore` écarte les fichiers système courants. Le fichier `.nojekyll` indique que les fichiers statiques ne nécessitent pas de traitement Jekyll.
+Le site utilise notamment :
 
-## Vérifications manuelles
+- Des éléments HTML sémantiques.
+- Des boutons pour les actions interactives.
+- Les éléments `<details>` et `<summary>` pour les contenus dépliables.
+- L'élément `<dialog>` pour le menu mobile.
+- L'attribut `aria-current` pour identifier la page active.
+- La préférence `prefers-reduced-motion` pour limiter les animations lorsque l'utilisateur le souhaite.
 
-1. Parcourir toutes les pages, liens de navigation, fil d’Ariane, cartes et CV.
-2. Au clavier : Tab, Entrée, Espace ; ouvrir le menu, Échap, vérifier le retour au bouton.
-3. Filtrer les projets et vérifier le nombre annoncé et les liens encore accessibles.
-4. Ouvrir et fermer les catégories de compétences.
-5. Contact : champs vides, e-mail invalide, texte trop court, copie et préparation d’e-mail. Ne pas envoyer de message de test réel.
-6. Observer à 320, 390, 768 et 1440 px ; contrôler l’absence de débordement horizontal.
-7. Activer « réduire les animations » et désactiver JavaScript : contenu et navigation doivent rester lisibles.
-8. Valider chaque page HTML et auditer accessibilité/SEO avec Lighthouse. Un contrôle structurel local n’équivaut pas à un résultat W3C ou Lighthouse.
+L'objectif est de conserver une navigation compréhensible sur ordinateur comme sur mobile, y compris au clavier.
 
-## Crédits
+## Fonctionnement du formulaire de contact
 
-Contenu et photographie : CV fourni par Matteo Bleu-Vialon. Rédaction initiale, code et schémas : réalisés avec l’assistance de Codex. DA reprise du digital resume, initialement inspirée de la navigation Rogue Studio. Polices système uniquement. Aucun visuel ou code Rogue Studio n’est redistribué. Voir `credits.html`.
+Le formulaire fonctionne entièrement côté navigateur et ne transmet aucune donnée à un serveur.
+
+Lorsqu'un visiteur remplit les champs et sélectionne **« Préparer mon e-mail »**, JavaScript vérifie les informations renseignées et génère un lien `mailto:`.
+
+Ce lien ouvre le logiciel de messagerie configuré sur l'appareil, avec un objet et un message préremplis. Le visiteur reste responsable de l'envoi.
+
+Une seconde option permet de copier le message pour l'utiliser dans un autre service de messagerie.
+
+Le formulaire ne stocke aucune information dans une base de données et n'effectue aucun envoi automatique.
+
+## Maintenance et évolutions
+
+Le site a été conçu pour pouvoir évoluer progressivement.
+
+### Modifier une page
+
+Les contenus se trouvent directement dans les fichiers HTML correspondants. Une modification de texte ou de mise en page ne nécessite donc aucune compilation.
+
+### Ajouter un projet
+
+Pour ajouter une nouvelle réalisation :
+
+1. Créer une nouvelle page HTML en reprenant la structure d'une fiche existante.
+2. Adapter son contenu, son titre et ses métadonnées.
+3. Ajouter les éventuels visuels dans `assets/images/`.
+4. Ajouter une carte et un lien vers la nouvelle fiche dans `projets.html`.
+5. Vérifier la navigation et l'affichage sur différentes tailles d'écran.
+
+Le menu et le pied de page sont présents directement dans chaque fichier HTML. Leurs modifications doivent donc être reportées sur les différentes pages concernées.
+
+### Axes d'amélioration
+
+Le portfolio continuera d'évoluer avec mon parcours. Les prochaines améliorations envisagées concernent notamment :
+
+- L'ajout de nouveaux projets techniques.
+- L'intégration de captures et de démonstrations des réalisations.
+- L'enrichissement des fiches projets avec davantage de retours d'expérience.
+- L'amélioration continue de l'accessibilité et des performances.
+- L'actualisation régulière du parcours et des compétences.
+
+## Hébergement et déploiement
+
+Le portfolio est hébergé sur GitHub Pages.
+
+**Dépôt GitHub :**  
+https://github.com/matteobleuvialon/portfolio
+
+**Site en ligne :**  
+https://matteobleuvialon.github.io/portfolio/
+
+La publication est configurée depuis la branche `main`, avec le dossier racine `/` comme source.
+
+Pour publier des modifications :
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push
+```
+
+GitHub Pages prend ensuite en charge le redéploiement du site.
+
+Les liens internes utilisent des chemins relatifs afin de fonctionner avec l'URL du dépôt GitHub Pages.
+
+Le fichier `.nojekyll` désactive le traitement Jekyll, qui n'est pas nécessaire au fonctionnement de ce projet.
+
+## Vérifications techniques
+
+Les principaux points à contrôler après une modification ou un déploiement sont :
+
+- **Navigation :** liens internes, fiches projets, menu mobile et téléchargement du CV.
+- **Responsive :** affichage sur mobile, tablette et ordinateur, sans débordement horizontal.
+- **Interactions :** filtres de projets, contenus dépliables et formulaire de contact.
+- **Accessibilité :** navigation au clavier, contraste des couleurs, alternatives textuelles et comportement des animations.
+- **Compatibilité :** consultation avec JavaScript désactivé pour vérifier l'accès au contenu principal.
+- **Qualité :** validation HTML et audits de performance, d'accessibilité et de référencement avec les outils appropriés.
+
+Ces contrôles permettent de repérer les problèmes introduits lors des évolutions du site.
+
+## Ressources et crédits
+
+Le contenu du portfolio s'appuie sur mon parcours, mes expériences et mes réalisations. Les schémas SVG ont été conçus pour illustrer les projets présentés.
+
+L'identité visuelle reprend certains éléments de mon univers graphique, avec une inspiration issue de différentes références de design web, notamment la navigation de Rogue Studio.
+
+Aucun visuel ni code provenant de ce site n'est redistribué.
+
+Les informations complémentaires sur les ressources utilisées et la confidentialité sont disponibles sur la page [Crédits](https://matteobleuvialon.github.io/portfolio/credits.html).
+
+---
+
+**Matteo Bleu-Vialon**  
+Étudiant à Epitech — Développement informatique, cybersécurité et cloud.
